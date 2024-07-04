@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Mooli", sans-serif;
 }
+
 .sidebar {
     width: 20%;
     height: 100%;
@@ -14,73 +15,72 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 30px 30px 30px;
-    justify-content: space-evenly;
-    
+    padding: 30px;
+    text-align: center;
+    padding-top: 100px;
 }
+
 .profile img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
 }
-.menus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
+.menus {
+    list-style: none;
+    padding: 0;
 }
+
 .menus a {
+    display: block;
     color: #ffffff8c;
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
     font-weight: 900;
 }
-.menu-item {
-    color: black; 
-    text-decoration: none;
-}
 
-.menu-item.active {
-    color: #fff; 
+.menus a:hover {
+    color: #fff!important;
 }
 
 
 /* Content */
-
 .content {
     padding: 0px 48px 80px 330px;
-
 }
+
 /* About */
 .about {
     line-height: 1.1;
     border-bottom: 1px solid #7b7d7e;
     padding-bottom: 150px;
 }
+
 .about h1, .about h1 span {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 96px;
     color: #343a40;
     padding-top: 148px;
 }
+
 .about h1 span {
     color: #bd5d38!important;
 }
+
 .about-text {
     margin-bottom: 48px;
 }
+
 .about-text p {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 24px;
     font-weight: 500;
     color: #343a40;
 }
+
 .about-text a {
     font-family: "Saira Extra Condensed", sans-serif;
     color: #bd5d38;
@@ -88,23 +88,25 @@
     font-weight: 500;
     margin-bottom: 48px;
 }
+
 .about-text-1 {
     margin-bottom: 48px;
 }
+
 .about-text-1 p {
     font-size: 18px;
     color: #6c757d;
     line-height: 1.7;
 }
+
+/* Social Icons */
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: left;
+    margin-top: 30px;
 }
+
 .social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
     background-color: #495057;
@@ -112,8 +114,9 @@
     border-radius: 100%;
     font-size: 1.5rem;
     padding: 20px;
-    margin-right: 1.5rem;
+    margin: 10px;
 }
+
 .social-icon:hover {
     background-color: #bd5d38;
 }
@@ -131,50 +134,55 @@
     margin-top: 48px;
     padding-bottom: 30px;
 }
+
 .exper-box {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
     padding-bottom: 50px;
 }
+
 .exper-left {
+    float: left;
     width: 80%;
 }
+
 .exper-left h3 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 32px;
     color: #343a40;
     font-weight: 700;
     line-height: 1.2;
-    
 }
+
 .exper-left h4 {
     text-transform: uppercase;
     font-weight: 600;
     color: #6c757d;
-    
     padding-bottom: 30px;
 }
+
 .exper-left p {
     color: #6c757d;
     line-height: 1.7;
     margin-bottom: 16px;
 }
-.exper-right span {
-    color: #bd5d38;
-}
+
 .exper-right {
+    float: right;
     width: 20%;
 }
 
+.exper-right span {
+    color: #bd5d38;
+}
 
 /* Skills */
 .skills {
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 100px;
     border-bottom: 1px solid #7b7d7e;
-
 }
+
 .skills h3 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 56px;
@@ -182,6 +190,7 @@
     color: #343a40;
     margin-top: 100px;
 }
+
 .skills h4 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 24px;
@@ -189,23 +198,23 @@
     font-weight: 500;
     padding-bottom: 50px;
 }
+
 .skills-icons {
-    display: flex;
-align-items: center;
+    text-align: left;
+    margin-top: 30px;
 }
+
 .skill-icon {
-    text-decoration: none;
-    list-style: none;
-}
-.skill-icon {
+    display: inline-block;
     margin-right: 30px;
 }
+
 .skill-icon svg {
     width: 36px;
     height: 42px;
     color: #6c757d;
-    
 }
+
 .workflow-p {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 24px;
@@ -213,20 +222,21 @@ align-items: center;
     color: #6c757d;
     margin-top: 40px;
 }
+
 .checktext {
-    display: flex;
-    align-items: center;
     color: #6c757d;
     padding-top: 20px;
     line-height: 0.1;
-   
 }
+
 .checktext svg {
     width: 16px;
     height: 16px;
 }
+
 .checktext p {
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 /* Interests */
@@ -234,6 +244,7 @@ align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 .interests h2  {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 56px;
@@ -242,14 +253,17 @@ align-items: center;
     padding-bottom: 40px;
     padding-top: 150px;
 }
+
 .interests p {
     color: #6c757d;
     padding-bottom: 16px;
 }
+
 /* Awards */
 .award {
     padding-bottom: 200px;
 }
+
 .award h2 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-size: 56px;
